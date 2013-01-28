@@ -19,10 +19,10 @@ type busdet struct {
 
 
 func newBus(bus string) *busdet {
-  /*Contacts remote host with query and populates struct with details of
+  /*Contacts remote host with query and creates a struct with details of
     the bus
     INPUT : bus number 
-    OUTPUT: bus details */
+    OUTPUT: struct with the bus details */
   var bd *busdet
   bef := `http://www.mtcbus.org/Routes.asp?cboRouteCode=`
   aft := `&submit=Search`
